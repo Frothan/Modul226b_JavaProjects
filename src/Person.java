@@ -7,6 +7,7 @@ public class Person {
 	String email;
 	// second commit
 	//test
+	//test2
 	public Person(String name, String firstName){
 		this.name = name;
 		this.firstName = firstName;
