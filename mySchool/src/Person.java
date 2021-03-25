@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public class Person {
-	//malaka
+	
 	String name;
 	String firstName;
 	String dateOfBirth;
