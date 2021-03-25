@@ -23,7 +23,7 @@ public class Starter {
 		mySchoolClass.addPerson(newTeacher1);
 		mySchoolClass.showPerson();
 
-
+		//test christo
 		//User myUser = new User();
 		//myUser.welcomeMessage();
 
