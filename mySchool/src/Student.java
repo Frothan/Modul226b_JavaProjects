@@ -3,8 +3,8 @@ public class Student extends Person{
 	String schoolClass;
 	String studentNumber;
 	
-	public Student(String name, String firstName) {
-		super(name, firstName);
+	public Student(String firstName) {
+		super(firstName);
 		schoolClass = "WUP20a";
 		studentNumber = "1";
 		

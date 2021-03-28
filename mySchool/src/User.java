@@ -1,13 +1,16 @@
-/*import java.util.InputMismatchException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class User {
 	
-	SchoolClass mySchoolClass = new SchoolClass(); 
+	
+	SchoolClass mySchoolClass = new SchoolClass();
 	Scanner scan = new Scanner(System.in);
 	private String inputValue;
 	private String inputStudent;
 	private String classInput;
+	Person newPerson = new Person(inputStudent);
+	
 	
 	public void welcomeMessage() {
 		System.out.println("Welcome to the school X\n");
@@ -21,26 +24,19 @@ public class User {
 			System.out.println("\nChoose an option(1/2) or 0 to exit:");
 			inputValue = scan.nextLine();
 			if(inputValue.equals("1")) {
-				System.out.println("Which class do you want to add students in?");
-				//if (mySchoolClass.classList.size() == 0) {
-					System.out.println("\nThere are no any classes yet");
-					System.out.println("To add a class please enter the class name:");
-					classInput = scan.nextLine();
-					//mySchoolClass.addClass(classInput);
-					
-					
-				} else {
+				System.out.println("Please type in the firstname of the student (zB. Tom)");
+				inputStudent = scan.nextLine();
+			
+				} 
+			else if (inputValue.equals("2")) {
 					System.out.println("");
-					mySchoolClass.showPerson();
-				}
-				
-				
-			} else if (inputValue.equals("2")) {
-				mySchoolClass.showPerson();
+					mySchoolClass.showStudents();
+					
 			}
-			System.out.println("Do you want to coninue?");
+	
+			System.out.println("Do you want to coninue? (1: yes, 0: no)");
 			inputValue = scan.nextLine();
-			if (inputValue.equals("9")) {
+			if (inputValue.equals("1")) {
 				continue;
 			}
 			else {
@@ -52,4 +48,3 @@ public class User {
 		
 	}
 }
-*/
